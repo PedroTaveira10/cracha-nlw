@@ -25,7 +25,7 @@ body {
 }
 
 main {
-  background: url(./images/background1.png);
+  background: url(images/background1.png);
   width: 375px;
   height: 812px;
   border-radius: 10px;
@@ -46,16 +46,13 @@ main {
   margin: 11.5rem auto 0;
 
   position: relative;
-  transition: transform 0.5s;
-}
-.avatar:hover {
-  transform: scale(1.3);
 }
 
 .avatar span {
   position: absolute;
   top: -15px;
   z-index: 1;
+  animation: spin 5s linear infinite;
 }
 
 .avatar > img {
@@ -64,6 +61,10 @@ main {
   object-fit: cover;
 
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  transition: transform 0.5s;
+}
+.avatar > img:hover {
+  transform: scale(1.3);
 }
 
 h1 {
@@ -106,4 +107,10 @@ ul li a {
 }
 ul li a:hover {
   transform: translateY(-8px);
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
 }
