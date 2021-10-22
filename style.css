@@ -25,7 +25,7 @@ body {
 }
 
 main {
-  background: url(images/background1.png);
+  background: url(./images/background1.png);
   width: 375px;
   height: 812px;
   border-radius: 10px;
