@@ -1,0 +1,84 @@
+<!-- comentario -->
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+  initial-scale=1.0"
+    />
+    <title>Vinicius Maciel - DoWhile 2021</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div class="content">
+          <div class="avatar">
+            <span>
+              <img src="images/selo-rocketseat.svg" alt="selo rocketseat" />
+            </span>
+            <img
+              id="userAvatar"
+              src="https://lorempixel.com/185/185/people/"
+              alt="foto pessoal"
+            />
+          </div>
+
+          <h1 id="userName">Teste</h1>
+          <a
+            id="userLink"
+            href="https://github.com/pedrotaveira10"
+            target="_blank"
+          >
+            <img src="images/github.svg" alt="icone do github" />
+            <span id="userLogin"> teste </span>
+          </a>
+
+          <p id="userBio">Lol</p>
+          <ul id="socialLinks">
+            <li class="youtube" class="social-button">
+              <a href="https://youtube.com/pewdiepie" target="_blank">
+                <img src="images/youtube.svg" alt="icone do youtube" />
+              </a>
+            </li>
+            <li class="facebook" class="social-button">
+              <a
+                href="https://www.facebook.com/vinicius.s.maciel.7/"
+                target="_blank"
+              >
+                <img src="images/facebook.svg" alt="icone do facebook" />
+              </a>
+            </li>
+            <li class="instagram" class="social-button">
+              <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.svg" alt="icone do instagram" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img id="desktop-card" src="images/desktop-card.png" alt="" />
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector('.container'), {
+        reverse: true,
+        max: 3,
+        scale: 1.1,
+        speed: 500
+      })
+    </script>
+  </body>
+</html>
